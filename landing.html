@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title -->
-    <title> AVI - Landing page </title>
+    <title> Harry Styles </title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="assets/img/favicon.ico"/>
@@ -21,31 +21,58 @@
       rel="stylesheet">
 
     <!-- Locales -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
     <script src="assets/js/script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="index.html">
-        <img src="assets/img/small_logo.png" alt="Logo" width="50px"
-          class="logo"/>
-      </a>
-    </nav>
-    <div class="wrapper">
-      <h1> Landing page 🧑‍💻</h1>
+    <div class="header">
+      <h1>Harry Styles</h1>
     </div>
-    <footer>
+    <div class="nav-container">
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="#life" class="nav-link">
+          <div>Life</div>
+        </a>
+        <a href="#tour" class="nav-link">
+          <div>Tour</div>
+        </a>
+        <a href="http://hstyles.lnk.to/shopAW" class="nav-link">
+          <div>Shop</div>
+        </a>
+        <a href="#music" class="nav-link black">
+          <div>Music</div>
+        </a>
+      </nav>
+    </div>
+    <section class="wrapper">
       <div class="personal-info">
-        <span class="label">Nombre</span>
-        <span> Verónica Isoardi </span>
-        <span class="label">Email</span>
-        <span> veronica.isoardi@gmail.com </span>
-        <span class="label">Legajo</span>
-        <span> 85091/4 </span>
+        <div class="two-column-grid">
+          <div class="half-pink">
+            <div class="column-padding">
+              <h2>
+                Harry's House
+              </h2>
+              <p>Harry's House is the third studio album by English singer and songwriter Harry Styles, 
+                released on 20 May 2022. The album has been noted as Styles' most introspective work.
+              </p>
+              <a href="https://shopeu.hstyles.co.uk/collections/music">
+                <div class="shadow-btn-wrap">
+                  <div class="shadow-btn-text">Buy album</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="half-yellow">
+            <div class="column-padding">
+              <div class="pictures-wrap">
+                <img src="/assets/img/hs-pic.png" loading="lazy" width="505" class="picture">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <a href="index.html">
-        <img src="assets/img/small_logo.png" alt="Logo" width="250px" />
-      </a>
+    </section>
+    <footer>
     </footer>
   </body>
 </html>

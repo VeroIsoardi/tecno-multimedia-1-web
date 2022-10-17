@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "MabryPro";
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryPro.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProBlack.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProBold.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProItalic.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProLight.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProMedium.otf");
+}
+
+*{
+  color: #000;
+  font-family: 'MabryPro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+
+}
+
+h1 {
+  font-size: 11rem;
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin: 10px 0;
+}
+
+.header {
+  border-bottom: 2px solid #000;
+  padding: 2rem 2vw;
+}
+
+.nav-container{
+  align-items: center;
+  border-bottom: 2px solid #000;
+  box-sizing: border-box;
+  display: table;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-menu{
+  display: flex;
+  float: right;
+}
+
+.nav-link{
+  border-left: 2px solid #000;
+  display: inline-block;
+  font-size: 1rem;
+  max-width: 100%;
+  padding: 1.5rem 3vw;
+  position: relative;
+}
+
+.nav-link.black{
+  background-color: #000;
+  border-right: 2px solid #000;
+}
+
+.nav-link.black div{
+  color: #fff;
+}
+
+.nav-link:hover{
+  background-color: #ff90e8;
+}
+
+.nav-link div{
+  color: #000;
+  background-color: transparent;
+}
+
+.wrapper{
+  overflow: hidden;
+}
+
+.two-column-grid{
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  border-bottom: 2px solid #000;
+}
+
+.half-pink{
+  background-color: #ff90e8;
+  color: #000;
+  border-right: 2px solid #000;
+}
+
+.half-yellow{
+  background-color: #ffc900;
+  color: #000;
+}
+
+.column-padding{
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  height: 100%;
+  min-height: 22rem;
+  padding: 6.5vw;
+  position: relative;
+}
+
+.shadow-btn-wrap{
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: inline-block;
+  justify-self: start;
+  max-width: 50%;
+  min-width: 18rem;
+  position: relative;
+}
+
+.shadow-btn-text{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.1rem 2rem 1.2rem;
+  position: relative;
+  text-align: center;
+}
+
+.shadow-btn-wrap:hover{
+  box-shadow: 16px 16px 0 -0.25rem #f1f333;
+}
+
+.pictures-wrap{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.picture{
+  width: 100%;
+  height: 100%;
+  max-width: 36rem;
+  min-width: 100%;
+  object-fit: contain;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
