@@ -1,11 +1,15 @@
 @font-face {
   font-family: "MabryPro";
-  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryPro.otf");
+  src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProRegular.otf");
   src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProBlack.otf");
   src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProBold.otf");
   src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProItalic.otf");
   src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProLight.otf");
   src: url("https://veroisoardi.github.io/tecno-multimedia-1-web/assets/css/fonts/MabryProMedium.otf");
+}
+
+html{
+  height: 100%;
 }
 
 *{
@@ -33,16 +37,39 @@ h2{
   letter-spacing: -0.02em;
 }
 
+h3{
+  font-size: 4rem;
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 3rem;
+  line-height: 0.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
 a {
   background-color: transparent;
   text-decoration: none;
+}
+
+a.text-decoration{
+  text-decoration: underline;
+}
+
+a.text-decoration:hover{
+  color: #ffc900;
 }
 
 p{
   font-size: 1.5rem;
   line-height: 1.3;
   letter-spacing: -0.01em;
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 .header {
@@ -108,13 +135,28 @@ p{
 
 .half-pink{
   background-color: #ff90e8;
-  color: #000;
   border-right: 2px solid #000;
+  color: #000;
 }
 
 .half-yellow{
   background-color: #ffc900;
   color: #000;
+}
+
+.half-green{
+  background-color: #23a094;
+  border-right: 2px solid #000;
+  color: #000
+}
+
+.half-black{
+  background-color: #000;
+  color: #fff;
+}
+
+.no-border{
+  border-right: 0px;
 }
 
 .column-padding{
@@ -127,6 +169,12 @@ p{
   min-height: 22rem;
   padding: 6.5vw;
   position: relative;
+}
+
+.column-padding.flex-end{
+  align-items: center;
+  height: 80%;
+  padding-right: 0vw;
 }
 
 .shadow-btn-wrap{
@@ -168,8 +216,103 @@ p{
   max-width: 36rem;
   min-width: 100%;
   object-fit: contain;
-  display: inline-block;
+}
+
+.sticker{
+  bottom: 2rem;
+  display: block;
+  left: 0rem;
+  position: absolute;
+  right: auto;
+  top: auto;
   max-width: 100%;
-  vertical-align: middle;
-  border: 0;
+}
+
+.sticker.music-sticker{
+  bottom: auto;
+  left: auto;
+  right: 2rem;
+  rotate: 14deg;
+  top: 4rem;
+  width: 9rem;
+}
+
+.sticker.film-sticker{
+  bottom: auto;
+  left: auto;
+  right: 1rem;
+  rotate: 14deg;
+  top: 0rem;
+  width: 9rem;
+}
+
+.sticker.audio-sticker{
+  bottom: 3rem;
+  left: 4rem;
+}
+
+.intro-life-section{
+  padding-top: 7.5rem;
+  padding-bottom: 8.5rem;
+  position: relative;
+  border-bottom: 2px solid #000;
+}
+
+.intro-life-container{
+  width: 100%;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+
+.intro-life-text{
+  display: grid;
+  width: 65vw;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0rem;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+.d-center{
+  display: flex;
+  align-items: center;
+  padding: 4vw 6vw 0vw 6vw;
+  height: 80%;
+}
+
+.mb-2{
+  margin-bottom: 2rem;
+}
+
+.white{
+  color: #fff;
+}
+
+.social-icons{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.social-link{
+  color: #fff;
+  display: inline-block;
+  height: 1.5rem;
+  max-width: 100%;
+  width: 1.5rem;
+}
+
+.social-icon{
+  color: #fff;
+  width: 50px;
+  height: 45px;
+  fill: none;
+  overflow: hidden;
 }
